@@ -58,6 +58,10 @@ module.exports = {
           from: path.join(cesiumSource, "Widgets"),
           to: `${cesiumBaseUrl}/Widgets`,
         },
+        {
+          from: path.join(__dirname, "src/data/pointclouds"),
+          to: "data/pointclouds",
+        },
       ],
     }),
     new webpack.DefinePlugin({
